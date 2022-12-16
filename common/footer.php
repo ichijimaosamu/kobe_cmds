@@ -9,7 +9,7 @@
 <li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>"><span class="header__nav__item__inner">トップ</span></a></li>
 <li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>news/"><span class="header__nav__item__inner">最新情報</span></a></li>
 <li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>leader/"><span class="header__nav__item__inner">次世代DXリーダー育成</span></a></li>
-<li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>curriculum"><span class="header__nav__item__inner">カリキュラム</span></a></li>
+<li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>program"><span class="header__nav__item__inner">講座プログラム</span></a></li>
 <li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>topics/"><span class="header__nav__item__inner">DXトピックス</span></a></li>
 <li class="footer__nav__item"><a href="<?php echo $base_url . '/'; ?>faq/"><span class="header__nav__item__inner">FAQ</span></a></li>
 </ul>

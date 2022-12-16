@@ -49,9 +49,9 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <h2 class="news__title">NEWS<small>お知らせ</small></h2>
 
 <ul class="news__tab">
-<li class="news__tab__item">すべて</li>
-<li class="news__tab__item">カテゴリー</li>
-<li class="news__tab__item">カテゴリー</li>
+<li class="news__tab__item -all">すべて</li>
+<li class="news__tab__item -notices">NOTICES</li>
+<li class="news__tab__item -events">EVENTS</li>
 </ul>
 
 <div class="news__box">
@@ -59,24 +59,36 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <li class="news__item">
 <dl>
 <dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">お知らせ</span><a href="<?php echo $base_url . '/'; ?>">タイトルが入ります。タイトルが入ります。</a></dd>
+<dd class="news__item__text"><span class="news__item__category">すべて</span><a href="<?php echo $base_url . '/'; ?>">タイトルが入ります。タイトルが入ります。</a></dd>
 </dl>
 </li>
-<li class="news__item">
+<li class="news__item -notices">
 <dl>
 <dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">カテゴリー</span>タイトルが入ります。タイトルが入ります。</dd>
+<dd class="news__item__text"><span class="news__item__category">NOTICES</span>タイトルが入ります。タイトルが入ります。</dd>
 </dl>
 </li>
-<li class="news__item">
+<li class="news__item -events">
 <dl>
 <dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">カテゴリー</span>タイトルが入ります。タイトルが入ります。</dd>
+<dd class="news__item__text"><span class="news__item__category">EVENTS</span>タイトルが入ります。タイトルが入ります。</dd>
+</dl>
+</li>
+<li class="news__item -notices">
+<dl>
+<dt class="news__item__date">2022.00.00</dt>
+<dd class="news__item__text"><span class="news__item__category">NOTICES</span>タイトルが入ります。タイトルが入ります。</dd>
+</dl>
+</li>
+<li class="news__item -events">
+<dl>
+<dt class="news__item__date">2022.00.00</dt>
+<dd class="news__item__text"><span class="news__item__category">EVENTS</span>タイトルが入ります。タイトルが入ります。</dd>
 </dl>
 </li>
 </ul>
 
-<p class="news__more"><a href="<?php echo $base_url . '/'; ?>news/">お知らせ一覧</a></p>
+<p class="news__more link-btn"><a href="<?php echo $base_url . '/'; ?>news/">お知らせ一覧</a></p>
 </div>
 
 </div>
@@ -86,9 +98,10 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <div class="leader__inner">
 <h2 class="leader__title">次世代XDリーダー育成</h2>
 
-<p class="leader__lead">現在の職種に関係なく、<br>
-どなたでも無理なく、<br>
-楽しく学べます。</p>
+<p class="leader__lead"><span class="leader__lead__inner">現在の職種に関係なく、</span><br>
+<span class="leader__lead__inner">どなたでも無理なく、</span><br>
+<span class="leader__lead__inner">楽しく学べます。</span></p>
+<p class="leader__pic"><img src="<?php echo $base_url . '/'; ?>img/leader_pic.png" alt=""></p>
 <p class="leader__text">DX基礎講座は、<br>
 DX人材の育成を目的とした<br>
 神戸大学が提供するeラーニングプログラムです。<br>
@@ -96,43 +109,54 @@ DX人材の育成を目的とした<br>
 完全オンラインで、いつでもどこでも学べ、<br>
 専門スタッフがわかるまで疑問に答える<br>
 「オンライン・オフィスアワー」も設置されています。<br>
-現在の職種に関係なく、どなたでも無理なく、<br>
-楽しく学べます。<br>
+データサイエンスの理論とビジネス領域で<br>
+活用できるスキルを同時に学べます。<br>
 <br>
-さあ、あなたもDX人材の仲間入りです！</p>
+DXに対して、こんな「不安」はありませんか？<br>
+・DXとは何かがわからない、メリットが想像できない<br>
+・自社に導入できるのかわからない、自信がない<br>
+・まず何を準備して、どうやって進めればいいかわからない<br>
+<br>
+本プログラムを受講すると、あなたの会社に合う DX取り組み領域と<br>
+AI 導入「はじめの一歩」がわかります。<br>
+- 自社に合った AI 取組領域 ※を選定できる！<br>
+- DX 導入の進め方と、最初に準備すべきことがわかる！<br>
+<span class="leader__text__notice">AI 取組領域の例：需要予測、経理業務の最適化、材料調達の最適化、製品不良の自動検知、<br>
+機械・設備の予知保全など</span></p>
+<p class="leader__pic leader__pic2"><img src="<?php echo $base_url . '/'; ?>img/leader_pic2.gif" alt=""></p>
 </div>
 </section>
 
-<section class="curriculum">
-<div class="curriculum__inner">
-<h2 class="curriculum__title">カリキュラム</h2>
+<section class="program">
+<div class="program__inner">
+<h2 class="program__title">講座プログラム</h2>
 
-<p class="curriculum__lead">本プログラムを受講すると、あなたの会社に合うDX取り組み領域とAI導入「はじめの一歩」がわかります。</p>
-<p class="curriculum__more"><a href="<?php echo $base_url . '/'; ?>curriculum/">カリキュラム一覧</a></p>
+<p class="program__lead">本プログラムを受講すると、あなたの会社に合うDX取り組み領域とAI導入「はじめの一歩」がわかります。</p>
+<p class="program__more link-btn"><a href="<?php echo $base_url . '/'; ?>program/">講座プログラム一覧</a></p>
 
-<ul class="curriculum__list">
-<li class="curriculum__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="curriculum__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
+<ul class="program__list">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb1.jpg" alt=""></p>
 <dl>
-<dt class="curriculum__item__term"><em>データサイエンス・AI基礎</em></dt>
-<dd class="curriculum__item__description">インターネット・情報技術の進展により、ビッグデータやＡＩの活用が可能になり社会に新しい価値が生まれ、日常にも大きな変化をもたらしています。</dd>
-<dd class="curriculum__item__more">VIEW MORE</dd>
+<dt class="program__item__term"><em>データサイエンス・AI基礎</em></dt>
+<dd class="program__item__description">インターネット・情報技術の進展により、ビッグデータやＡＩの活用が可能になり社会に新しい価値が生まれ、日常にも大きな変化をもたらしています。</dd>
+<dd class="program__item__more">VIEW MORE</dd>
 </dl>
 </a></li>
-<li class="curriculum__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="curriculum__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb2.jpg" alt=""></p>
 <dl>
-<dt class="curriculum__item__term">Pyton基礎演習</dt>
-<dd class="curriculum__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語として世界で広く普及しているPythonを採り上げ，演習を通してプログラミングの基礎，および，データサイエンスの実践方法について学習します。</dd>
-<dd class="curriculum__item__more">VIEW MORE</dd>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語として世界で広く普及しているPythonを採り上げ，演習を通してプログラミングの基礎，および，データサイエンスの実践方法について学習します。</dd>
+<dd class="program__item__more">VIEW MORE</dd>
 </dl>
 </a></li>
-<li class="curriculum__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="curriculum__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
 <dl>
-<dt class="curriculum__item__term">Pyton基礎演習</dt>
-<dd class="curriculum__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語として世界で広く普及しているPythonを採り上げ，演習を通してプログラミングの基礎，および，データサイエンスの実践方法について学習します。</dd>
-<dd class="curriculum__item__more">VIEW MORE</dd>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語として世界で広く普及しているPythonを採り上げ，演習を通してプログラミングの基礎，および，データサイエンスの実践方法について学習します。</dd>
+<dd class="program__item__more">VIEW MORE</dd>
 </dl>
 </a></li>
 </ul>
@@ -143,12 +167,11 @@ DX人材の育成を目的とした<br>
 <div class="lecturer__inner">
 <h2 class="lecturer__title">担当講師について</h2>
 
-<p class="lecturer__lead">どなたでも無理なく、<br>
-楽しく学べます。</p>
-<p class="lecturer__text">この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。<br>
-<br>
-この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。<br>
-この文章はダミーです。繰り返します。この文章はダミーです。</p>
+<p class="lecturer__lead">DXって何なのか？<br>
+がわかります</p>
+<p class="lecturer__text">完全オンラインで、いつでもどこでも学べ、<br>
+専門スタッフがわかるまで疑問に答える<br>
+「オンライン・オフィスアワー」が設置されています。</p>
 </div>
 </section>
 
@@ -160,21 +183,21 @@ DX人材の育成を目的とした<br>
 <li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
 <p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
 <dl>
-<dt class="topics__item__term"><span class="topics__item__category">お知らせ</span>2022.00.00</dt>
+<dt class="topics__item__term"><span class="topics__item__category">神戸データサイエンス操練所</span>2022.00.00</dt>
 <dd class="topics__item__description"><em>タイトルが入りますタイトルが入ります</em></dd>
 </dl>
 </a></li>
 <li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
 <p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
 <dl>
-<dt class="topics__item__term"><span class="topics__item__category">イベント</span>2022.00.00</dt>
+<dt class="topics__item__term"><span class="topics__item__category">高大連携</span>2022.00.00</dt>
 <dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
 </dl>
 </a></li>
 <li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
 <p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
 <dl>
-<dt class="topics__item__term"><span class="topics__item__category">お知らせ</span>2022.00.00</dt>
+<dt class="topics__item__term"><span class="topics__item__category">DXプロジェクト</span>2022.00.00</dt>
 <dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
 </dl>
 </a></li>
