@@ -19,6 +19,8 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 	include_once ($_SERVER['DOCUMENT_ROOT'] .'/common/common_head.php');
 }
 ?>
+<link rel="stylesheet" href="<?php echo $base_url . '/'; ?>css/slick.css" />
+<link rel="stylesheet" href="<?php echo $base_url . '/'; ?>css/slick-theme.css" />
 <link rel="stylesheet" href="<?php echo $base_url . '/'; ?>css/top.css" />
 </head>
 <body id="top" itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -96,7 +98,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <section class="leader">
 <div class="leader__inner">
-<h2 class="leader__title">次世代XDリーダー育成</h2>
+<h2 class="leader__title">次世代DXリーダ育成</h2>
 
 <p class="leader__lead"><span class="leader__lead__inner">現在の職種に関係なく、</span><br>
 <span class="leader__lead__inner">どなたでも無理なく、</span><br>
@@ -140,23 +142,39 @@ AI 導入「はじめの一歩」がわかります。<br>
 <dl>
 <dt class="program__item__term"><em>データサイエンス・AI基礎</em></dt>
 <dd class="program__item__description">インターネット・情報技術の進展により、ビッグデータやＡＩの活用が可能になり社会に新しい価値が生まれ、日常にも大きな変化をもたらしています。</dd>
-<dd class="program__item__more">VIEW MORE</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
 <li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb2.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term">Pyton基礎演習</dt>
-<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語として世界で広く普及しているPythonを採り上げ，演習を通してプログラミングの基礎，および，データサイエンスの実践方法について学習します。</dd>
-<dd class="program__item__more">VIEW MORE</dd>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
 <li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term">Pyton基礎演習</dt>
-<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語として世界で広く普及しているPythonを採り上げ，演習を通してプログラミングの基礎，および，データサイエンスの実践方法について学習します。</dd>
-<dd class="program__item__more">VIEW MORE</dd>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
 </ul>
@@ -165,13 +183,21 @@ AI 導入「はじめの一歩」がわかります。<br>
 
 <section class="lecturer">
 <div class="lecturer__inner">
+<div class="lecturer__flex">
+
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>img/lecturer_pic.jpg" alt=""></p>
+
+<div class="lecturer__right">
 <h2 class="lecturer__title">担当講師について</h2>
 
-<p class="lecturer__lead">DXって何なのか？<br>
-がわかります</p>
+<p class="lecturer__lead"><span class="lecturer__lead__inner">DXって何なのか？</span><br>
+<span class="lecturer__lead__inner">がわかります</span></p>
 <p class="lecturer__text">完全オンラインで、いつでもどこでも学べ、<br>
 専門スタッフがわかるまで疑問に答える<br>
 「オンライン・オフィスアワー」が設置されています。</p>
+</div>
+
+</div>
 </div>
 </section>
 
@@ -181,21 +207,35 @@ AI 導入「はじめの一歩」がわかります。<br>
 
 <ul class="topics__list">
 <li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
+<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb1.jpg" alt=""></p>
 <dl>
 <dt class="topics__item__term"><span class="topics__item__category">神戸データサイエンス操練所</span>2022.00.00</dt>
 <dd class="topics__item__description"><em>タイトルが入りますタイトルが入ります</em></dd>
 </dl>
 </a></li>
 <li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
+<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb2.jpg" alt=""></p>
 <dl>
 <dt class="topics__item__term"><span class="topics__item__category">高大連携</span>2022.00.00</dt>
 <dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
 </dl>
 </a></li>
 <li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/.jpg" alt=""></p>
+<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb3.jpg" alt=""></p>
+<dl>
+<dt class="topics__item__term"><span class="topics__item__category">DXプロジェクト</span>2022.00.00</dt>
+<dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
+</dl>
+</a></li>
+<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb2.jpg" alt=""></p>
+<dl>
+<dt class="topics__item__term"><span class="topics__item__category">高大連携</span>2022.00.00</dt>
+<dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
+</dl>
+</a></li>
+<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb3.jpg" alt=""></p>
 <dl>
 <dt class="topics__item__term"><span class="topics__item__category">DXプロジェクト</span>2022.00.00</dt>
 <dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
@@ -203,7 +243,7 @@ AI 導入「はじめの一歩」がわかります。<br>
 </a></li>
 </ul>
 
-<p class="topics__more"><a href="<?php echo $base_url . '/'; ?>topics/">トピックス一覧</a></p>
+<p class="topics__more link-btn"><a href="<?php echo $base_url . '/'; ?>topics/">トピックス一覧</a></p>
 </div>
 </section>
 
@@ -211,11 +251,40 @@ AI 導入「はじめの一歩」がわかります。<br>
 <div class="links__inner">
 <h2 class="links__title">LINKS<small>関連リンク</small></h2>
 
+<div class="links__twocolumn">
+<h3 class="links__subtitle">データサイエンス関係</h3>
 <ul class="links__list">
-<li class="links__item"><a href="#" target="_blank" rel="noopener"><img src="https://placehold.jp/340x90.png" alt=""></a></li>
-<li class="links__item"><a href="#" target="_blank" rel="noopener"><img src="https://placehold.jp/340x90.png" alt=""></a></li>
-<li class="links__item"><a href="#" target="_blank" rel="noopener"><img src="https://placehold.jp/340x90.png" alt=""></a></li>
+<li class="links__item"><a href="http://www.mi.u-tokyo.ac.jp/consortium/index.html" target="_blank" rel="noopener">数理・データサイエンス教育強化拠点コンソーシアム</a></li>
+<li class="links__item"><a href="http://ds.k.kyoto-u.ac.jp/block_kinki/" target="_blank" rel="noopener">数理・データサイエンス教育強化拠点コンソーシアム 近畿ブロック</a></li>
+<li class="links__item"><a href="http://www-mmds.sigmath.es.osaka-u.ac.jp/" target="_blank" rel="noopener">大阪大学 数理・データ科学教育研究センター</a></li>
+<li class="links__item"><a href="https://www.airc.aist.go.jp/" target="_blank" rel="noopener">人工知能研究センター</a></li>
+<li class="links__item"><a href="https://www.riken.jp/research/labs/aip/" target="_blank" rel="noopener">理化学研究所 革新知能統合研究センター (AIP)</a></li>
+<li class="links__item"><a href="https://www.airc.aist.go.jp/consortium/" target="_blank" rel="noopener">人工知能技術コンソーシアム</a></li>
+<li class="links__item"><a href="https://jinse.jp/" target="_blank" rel="noopener">統計教育連携ネットワーク</a></li>
 </ul>
+<h3 class="links__subtitle">人材育成プログラム関係</h3>
+<ul class="links__list">
+<li class="links__item"><a href="https://duex.jp/" target="_blank" rel="noopener">DuEX（データ関連人材育成関西地区コンソーシアム）</a></li>
+<li class="links__item"><a href="http://ds4.sigmath.es.osaka-u.ac.jp/" target="_blank" rel="noopener">DS4（独り立ちデータサイエンティスト人材育成プログラム）</a></li>
+<li class="links__item"><a href="https://ddrive.jp/" target="_blank" rel="noopener">D-DRIVE（データ関連人材育成プログラム）</a></li>
+</ul>
+<h3 class="links__subtitle">連携企業・団体</h3>
+<ul class="links__list">
+<li class="links__item"><a href="https://www.city.kobe.lg.jp/" target="_blank" rel="noopener">神戸市</a></li>
+<li class="links__item"><a href="https://web.pref.hyogo.lg.jp/index.html" target="_blank" rel="noopener">兵庫県</a></li>
+<li class="links__item"><a href="https://www.kobe-cci.or.jp/" target="_blank" rel="noopener">神戸商工会議所</a></li>
+<li class="links__item"><a href="https://www.aist.go.jp/" target="_blank" rel="noopener">産業技術総合研究所</a></li>
+<li class="links__item"><a href="https://www.kankeiren.or.jp/" target="_blank" rel="noopener">公益財団法人 関西経済連合会</a></li>
+<li class="links__item"><a href="https://www.jri.co.jp/" target="_blank" rel="noopener">株式会社日本総合研究所</a></li><br>
+<br>
+<br>
+</ul>
+<h3 class="links__subtitle">海外協定機関</h3>
+<ul class="links__list">
+<li class="links__item"><a href="https://www.ntu.edu.sg/" target="_blank" rel="noopener">南洋理工大学 DSAIR</a></li>
+</ul>
+</div>
+
 </div>
 </section>
 
@@ -258,6 +327,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <!--/sp_menu-->
 <?php } ?>
 
+<script src="<?php echo $base_url . '/'; ?>js/slick.min.js"></script>
 <script src="<?php echo $base_url . '/'; ?>js/top.js"></script>
 </body>
 </html>

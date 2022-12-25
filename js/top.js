@@ -19,3 +19,33 @@ $(function() {
 		$(".news__item").show();
 	});
 });
+
+$(document).ready(function(){
+	$('.program__list').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: false,
+			arrows: true, //前後ボタンの表示
+			responsive: [{
+				breakpoint: 768,  //ブレイクポイントを指定
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+		}]
+	});
+
+	$('.topics__list').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			infinite: false,
+			arrows: true, //前後ボタンの表示
+			responsive: [{
+				breakpoint: 768,  //ブレイクポイントを指定
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+		}]
+	});
+});

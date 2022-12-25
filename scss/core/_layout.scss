@@ -138,16 +138,103 @@
 		}
 	}
 
+	.right-sns {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		position: absolute;
+		z-index: 10;
+		right: 30px;
+		top: 520px;
+		width: 30px;
+	}
+
+	.right-facebook {
+		a {
+			display: block;
+		}
+
+		svg {
+			width: 30px;
+			fill: #3773e6;
+		}
+	}
+
+	.right-scrolldown {
+		-ms-writing-mode: tb-rl;
+		writing-mode: vertical-rl;
+
+		span {
+			position: relative;
+			top: 15px;
+			color: #116DC9;
+			font-size: 12px;
+			font-weight: bold;
+
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				width: 2px;
+				height: 60px;
+				margin: auto;
+				background: #116DC9;
+				animation: pathmove 1.6s ease-in-out infinite;
+				opacity: 0;
+			}
+		}
+	}
+
+	/*高さ・位置・透過が変化して線が上から下に動く*/
+	@keyframes pathmove {
+		0% {
+			height: 40px;
+			bottom: -50px;
+			opacity: 0;
+		}
+		30% {
+			height: 40px;
+			opacity: 1;
+		}
+		100% {
+			height: 10px;
+			bottom: -90px;
+			opacity: 0;
+		}
+	}
+
 	.right-nav {
+		@include box-shadow(0 0 10px rgba(#000, .3));
 		display: none;
 		position: fixed;
-		bottom: 10px;
-		right: 10px;
+		bottom: 0;
+		right: 0;
 		z-index: 1000;
 
 		a {
 			@include transition(opacity $mouseover linear);
 			display: block;
+			width: 80px;
+			height: 80px;
+			background: #FFF;
+
+			&:after {
+				@include rotate(-45deg);
+				content: "";
+				position: absolute;
+				left: 2px;
+				right: 0;
+				top: 10px;
+				bottom: 0;
+				width: 20px;
+				height: 20px;
+				margin: auto;
+				border: 0;
+				border-top: solid 4px #1658B7;
+				border-right: solid 4px #1658B7;
+			}
 
 			&:hover {
 				@include opacity(.7);
@@ -159,6 +246,22 @@
 				width: 45px;
 				height: 45px;
 			}
+		}
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+
+		a {
+			display: block;
+			margin-right: 20px;
+		}
+
+		small {
+			display: block;
+			font-size: 16px;
+			line-height: (25/16);
 		}
 	}
 
@@ -184,22 +287,6 @@
 			justify-content: space-between;
 			padding: 20px 70px;
 			border-bottom: 1px solid #B3B3B3;
-		}
-
-		&__logo {
-			display: flex;
-			align-items: center;
-
-			a {
-				display: block;
-				margin-right: 20px;
-			}
-
-			small {
-				display: block;
-				font-size: 16px;
-				line-height: (25/16);
-			}
 		}
 
 		&__nav {
@@ -243,29 +330,96 @@
 }
 
 @mixin layout-content {
-	#content {
-	}
 }
 
 @mixin layout-main {
-
-	.topicpath {
-	}
-
-	.topicpath-item {
-	}
-
-	.main {
-	}
-
-}
-
-@mixin layout-sub {
-	.side {
-	}
 }
 
 @mixin layout-footer {
 	.footer {
+		background: #FFF;
+
+		&__inner {
+			@include border-radius(0 150px 0 0);
+			background: #116DC9;
+		}
+
+		&__wrapper {
+			width: 1000px;
+			margin: auto;
+			padding: 80px 0 65px;
+		}
+
+		&__logo {
+			margin-bottom: 60px;
+			padding-bottom: 25px;
+			border-bottom: 1px solid #FFF;
+
+			small {
+				color: #FFF;
+			}
+		}
+
+		&__flex {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__nav {
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+				width: 700px;
+				margin-top: -40px;
+			}
+
+			&__item {
+				min-width: 220px;
+				margin-top: 40px;
+
+				a {
+					position: relative;
+					color: #FFF;
+					font-size: 16px;
+					text-decoration: underline;
+
+					&:before {
+						content: "";
+						position: absolute;
+						right: -30px;
+						top: 0;
+						bottom: 0;
+						width: 0;
+						height: 0;
+						margin: auto;
+						border-style: solid;
+						border-width: 5px 0 5px 12.5px;
+						border-color: transparent transparent transparent #FFF;
+					}
+				}
+			}
+		}
+
+		&__contact {
+			a {
+				background: #FFF;
+				color: #116DC9;
+
+				&:before{
+					background: #116DC9;
+				}
+				&:after {
+					border-color: #FFF;
+				}
+			}
+		}
+
+		&__copy {
+			padding: 20px 0;
+			background: #064591;
+			color: #FFF;
+			font-size: 14px;
+			text-align: center;
+		}
 	}
 }
