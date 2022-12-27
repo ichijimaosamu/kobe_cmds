@@ -1,0 +1,374 @@
+//変数インクルード
+@import 'core';
+@import 'compass';
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+File Name: program.scss
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+目次
+
+1.	共通使用変数定義
+2.	ブラウザデフォルトスタイルリセット
+3.	HTMLタグ
+4.	container
+5.	共通部分
+6.	header
+7.	content
+8.	main
+9.	footer
+10.	ページ別個別設定
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------
+1.	共通使用変数定義
+----------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------
+2.	ブラウザデフォルトスタイルリセット
+----------------------------------------------------------------------*/
+@include reset;
+//compass
+@include reset-html5;
+//オリジナル
+@include resethtml5;
+
+
+/*----------------------------------------------------------------------
+3.	HTMLタグ
+----------------------------------------------------------------------*/
+@include layout-tags;
+
+
+/*----------------------------------------------------------------------
+4.	container
+----------------------------------------------------------------------*/
+@include layout-container;
+
+
+/*----------------------------------------------------------------------
+5.	共通部分
+----------------------------------------------------------------------*/
+@include common;
+
+
+/*----------------------------------------------------------------------
+6.	#header
+----------------------------------------------------------------------*/
+@include layout-header;
+
+
+/*----------------------------------------------------------------------
+7.	#content
+----------------------------------------------------------------------*/
+@include layout-content;
+
+
+/*----------------------------------------------------------------------
+8.	#main
+----------------------------------------------------------------------*/
+@include layout-main;
+
+
+/*----------------------------------------------------------------------
+9.	#footer
+----------------------------------------------------------------------*/
+@include layout-footer;
+
+
+/*----------------------------------------------------------------------
+10.	ページ別個別設定
+----------------------------------------------------------------------*/
+
+.main {
+	position: relative;
+
+	&__title {
+		border-bottom: 1px solid #000;
+
+		&__inner {
+			display: block;
+			width: 1180px;
+			margin: 0 auto;
+			padding-bottom: 25px;
+			font-size: 40px;
+			font-weight: bold;
+		}
+	}
+}
+
+.program {
+	padding-top: 165px;
+
+	&__upper {
+		width: 1180px;
+		margin: 0 auto -265px;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-size: 50px;
+		font-weight: bold;
+	}
+
+	&__box {
+		@include border-radius(15px);
+		width: 780px;
+		padding: 80px 50px 70px;
+		background: #F0F8FF;
+
+		&__term {
+			margin-bottom: 40px;
+			padding-left: 25px;
+			color: #116DC9;
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 2;
+			border-left: 6px solid #116DC9;
+		}
+
+		&__description {
+			font-size: 16px;
+			line-height: (36/16);
+		}
+	}
+
+	&__pic {
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		top: 160px;
+	}
+
+	&__lower {
+		position: relative;
+		z-index: -100;
+		padding: 365px 0 150px;
+		background: #E8ECEF;
+	}
+
+	.box {
+ 		width: 960px;
+		margin-right: auto;
+		margin-left: auto;
+
+		&__title {
+			position: relative;
+			margin-bottom: 70px;
+			color: #116DC9;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -30px;
+				width: 72px;
+				height: 2px;
+				margin: auto;
+				background: #000;
+			}
+		}
+	}
+}
+
+.summary {
+	margin-bottom: 130px;
+
+	&__inner {
+		@include border-radius(15px);
+		padding: 40px 60px;
+		background: #FFF;
+	}
+
+	&__item {
+		padding: 20px 0;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid #CCC;
+		}
+
+		dl {
+			display: flex;
+		}
+
+		&__term,
+		&__description {
+			font-size: 16px;
+			line-height: (36/16);
+		}
+
+		&__term {
+			width: 28%;
+			color: #116DC9;
+			font-weight: bold;
+		}
+
+		&__description {
+			width: 72%;
+		}
+	}
+}
+
+.schedule {
+	&__list {
+		width: 610px;
+		margin: auto;
+	}
+
+	&__item {
+		@include border-radius(5px);
+		position: relative;
+		padding: 25px 0 25px 70px;
+		background: #FFF;
+
+		&:not(:last-child) {
+			margin-bottom: 35px;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 127px;
+				bottom: -35px;
+				width: 2px;
+				height: 35px;
+				background: #1372D1;
+			}
+		}
+
+		dl {
+			display: flex;
+			align-items: center;
+		}
+
+		&__term,
+		&__description {
+			font-size: 16px;
+		}
+
+		&__term {
+			@include border-radius(20px);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 120px;
+			height: 40px;
+			margin-right: 30px;
+			background: #29BBE2;
+			color: #FFF;
+			font-weight: 500;
+			letter-spacing: 3px;
+		}
+	}
+}
+
+.lecturer {
+	padding: 150px 0;
+	background: url("../program/img/lecturer_bg.gif") center top no-repeat #116DC9;
+
+	&__title {
+		margin-bottom: 50px;
+		color: #FFF;
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	&__inner {
+		@include border-radius(15px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 900px;
+		margin: auto;
+		padding: 50px;
+		background: #FFF;
+	}
+
+	&__info {
+		width: 450px;
+
+		&__name {
+			margin-bottom: 20px;
+			font-size: 30px;
+			font-weight: 500;
+		}
+
+		&__position {
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-weight: bold;
+			line-height: (32/16);
+		}
+
+		&__text {
+			padding: 20px 30px;
+			background: #E1EFFF;
+			font-size: 16px;
+			line-height: (35/16);
+		}
+	}
+}
+
+.contact {
+	padding: 100px 0 360px;
+	background: url("../program/img/contact_bg.png") center bottom 30px no-repeat;
+
+	&__title {
+		margin-bottom: 50px;
+		color: #116DC9;
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+
+		&__category {
+			display: inline-block;
+			margin-bottom: 30px;
+			padding: 6px 15px 9px;
+			color: initial;
+			font-size: 22px;
+			font-weight: bold;
+			border: 1px solid #000;
+		}
+	}
+
+	&__text {
+		width: 780px;
+		margin: 0 auto 55px;
+		font-size: 18px;
+		line-height: (44/18);
+		text-align: center;
+	}
+
+	&__btn {
+		a {
+			@include border-radius(60px);
+			@include box-shadow(0 0 15px rgba(#000, .35));
+			width: 490px;
+			height: 120px;
+			margin: auto;
+			font-size: 24px;
+
+			&:before {
+				right: 30px;
+				width: 50px;
+				height: 50px;
+			}
+
+			&:after {
+				right: 49px;
+				width: 12px;
+				height: 12px;
+			}
+		}
+	}
+}

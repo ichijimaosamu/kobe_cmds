@@ -327,9 +327,42 @@
 			}
 		}
 	}
+
+	.lower {
+		.header {
+			margin-bottom: 75px;
+		}
+	}
 }
 
 @mixin layout-content {
+	.topicpath {
+		display: flex;
+		width: 1180px;
+		margin: 0 auto 50px;
+
+		&__item {
+			position: relative;
+			font-size: 16px;
+
+			&:not(:last-child) {
+				margin-right: 50px;
+
+				&:after {
+					content: "＞";
+					position: absolute;
+					right: -35px;
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+			}
+
+			a {
+				color: initial;
+			}
+		}
+	}
 }
 
 @mixin layout-main {
