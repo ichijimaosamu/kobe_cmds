@@ -137,7 +137,7 @@ AI 導入「はじめの一歩」がわかります。<br>
 <p class="program__more link-btn"><a href="<?php echo $base_url . '/'; ?>program/">講座プログラム一覧</a></p>
 
 <ul class="program__list">
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/01/">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb1.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term"><em>データサイエンス・AI基礎</em></dt>
