@@ -100,18 +100,21 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <div class="leader__inner">
 <h2 class="leader__title">次世代DXリーダ育成</h2>
 
+<div class="leader__flex">
 <p class="leader__lead"><span class="leader__lead__inner">現在の職種に関係なく、</span><br>
 <span class="leader__lead__inner">どなたでも無理なく、</span><br>
 <span class="leader__lead__inner">楽しく学べます。</span></p>
 <p class="leader__pic"><img src="<?php echo $base_url . '/'; ?>img/leader_pic.png" alt=""></p>
-<p class="leader__text">DX基礎講座は、<br>
-DX人材の育成を目的とした<br>
+</div>
+
+<p class="leader__text">DX基礎講座は、<br class="sp_none">
+DX人材の育成を目的とした<br class="sp_none">
 神戸大学が提供するeラーニングプログラムです。<br>
 <br>
-完全オンラインで、いつでもどこでも学べ、<br>
-専門スタッフがわかるまで疑問に答える<br>
+完全オンラインで、いつでもどこでも学べ、<br class="sp_none">
+専門スタッフがわかるまで疑問に答える<br class="sp_none">
 「オンライン・オフィスアワー」も設置されています。<br>
-データサイエンスの理論とビジネス領域で<br>
+データサイエンスの理論とビジネス領域で<br class="sp_none">
 活用できるスキルを同時に学べます。<br>
 <br>
 DXに対して、こんな「不安」はありませんか？<br>
@@ -119,7 +122,7 @@ DXに対して、こんな「不安」はありませんか？<br>
 ・自社に導入できるのかわからない、自信がない<br>
 ・まず何を準備して、どうやって進めればいいかわからない<br>
 <br>
-本プログラムを受講すると、あなたの会社に合う DX取り組み領域と<br>
+本プログラムを受講すると、あなたの会社に合う DX取り組み領域と<br class="sp_none">
 AI 導入「はじめの一歩」がわかります。<br>
 - 自社に合った AI 取組領域 ※を選定できる！<br>
 - DX 導入の進め方と、最初に準備すべきことがわかる！<br>
@@ -275,9 +278,9 @@ AI 導入「はじめの一歩」がわかります。<br>
 <li class="links__item"><a href="https://www.kobe-cci.or.jp/" target="_blank" rel="noopener">神戸商工会議所</a></li>
 <li class="links__item"><a href="https://www.aist.go.jp/" target="_blank" rel="noopener">産業技術総合研究所</a></li>
 <li class="links__item"><a href="https://www.kankeiren.or.jp/" target="_blank" rel="noopener">公益財団法人 関西経済連合会</a></li>
-<li class="links__item"><a href="https://www.jri.co.jp/" target="_blank" rel="noopener">株式会社日本総合研究所</a></li><br>
-<br>
-<br>
+<li class="links__item"><a href="https://www.jri.co.jp/" target="_blank" rel="noopener">株式会社日本総合研究所</a></li><br class="sp_none">
+<br class="sp_none">
+<br class="sp_none">
 </ul>
 <h3 class="links__subtitle">海外協定機関</h3>
 <ul class="links__list">
@@ -315,7 +318,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php
 if ($_SERVER["HTTP_HOST"] == 'localhost') {
@@ -325,7 +327,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 <!--/sp_menu-->
-<?php } ?>
 
 <script src="<?php echo $base_url . '/'; ?>js/slick.min.js"></script>
 <script src="<?php echo $base_url . '/'; ?>js/top.js"></script>

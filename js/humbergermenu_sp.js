@@ -23,18 +23,13 @@
 				    		 drawerToggle();
 				    	return false;
 				    break;
-				}
+				 }
 				function drawerToggle(){
 					$('body').toggleClass('drawer-opened');
 					touch = false;
-					$('#drawernav').fadeToggle();
 				}
 			})
+			$('#overlay').on('click touchstart',function(){
+				$('body').removeClass('drawer-opened');
+			})
 		})(jQuery);
-
-
-
-
-
-
-

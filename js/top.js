@@ -22,30 +22,34 @@ $(function() {
 
 $(document).ready(function(){
 	$('.program__list').slick({
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			infinite: false,
-			arrows: true, //前後ボタンの表示
-			responsive: [{
-				breakpoint: 768,  //ブレイクポイントを指定
+		infinite: false,
+		arrows: true, //前後ボタンの表示
+		responsive: [
+			{
+				breakpoint: 768,
 				settings: {
+					infinite: true,
 					slidesToShow: 1,
-					slidesToScroll: 1,
-				}
-		}]
+					arrows: false,
+					dots: true
+				},
+			},
+		],
 	});
 
 	$('.topics__list').slick({
-			slidesToShow: 3,
-			slidesToScroll: 1,
-			infinite: false,
-			arrows: true, //前後ボタンの表示
-			responsive: [{
-				breakpoint: 768,  //ブレイクポイントを指定
+		infinite: false,
+		arrows: true, //前後ボタンの表示
+		responsive: [
+			{
+				breakpoint: 768,
 				settings: {
+					infinite: true,
 					slidesToShow: 1,
-					slidesToScroll: 1,
-				}
-		}]
+					arrows: false,
+					dots: true
+				},
+			},
+		],
 	});
 });

@@ -3,6 +3,9 @@
 	body {
 		min-width: 1460px;
 		height: 100%;
+		@include sp() {
+			min-width: auto;
+		}
 	}
 
 	html {
@@ -105,6 +108,10 @@
 			color: #FFF;
 			font-size: 18px;
 			font-weight: 700;
+			@include sp() {
+				width: 80%;
+				font-size: 16px;
+			}
 
 			&:before,
 			&:after {
@@ -147,6 +154,11 @@
 		right: 30px;
 		top: 520px;
 		width: 30px;
+		@include sp() {
+			right: 18%;
+			top: 0.1%;
+			width: 8%;
+		}
 	}
 
 	.right-facebook {
@@ -157,12 +169,18 @@
 		svg {
 			width: 30px;
 			fill: #3773e6;
+			@include sp() {
+				width: 100%;
+			}
 		}
 	}
 
 	.right-scrolldown {
 		-ms-writing-mode: tb-rl;
 		writing-mode: vertical-rl;
+		@include sp() {
+			display: none;
+		}
 
 		span {
 			position: relative;
@@ -219,6 +237,10 @@
 			width: 80px;
 			height: 80px;
 			background: #FFF;
+			@include sp() {
+				width: 50px;
+				height: 50px;
+			}
 
 			&:after {
 				@include rotate(-45deg);
@@ -234,6 +256,11 @@
 				border: 0;
 				border-top: solid 4px #1658B7;
 				border-right: solid 4px #1658B7;
+				@include sp() {
+					width: 10px;
+					height: 10px;
+					border-width: 2px;
+				}
 			}
 
 			&:hover {
@@ -281,15 +308,50 @@
 		margin: auto;
 		background: #FFF;
 		overflow: hidden;
+		@include sp() {
+			@include box-shadow(none);
+			width: auto;
+			margin-bottom: 5%;
+			background: none;
+		}
 
 		&__upper {
 			display: flex;
 			justify-content: space-between;
 			padding: 20px 70px;
 			border-bottom: 1px solid #B3B3B3;
+			@include sp() {
+				display: block;
+				width: 48%;
+				margin: 3% 0 0 4%;
+				padding: 0;
+				border-bottom: none;
+			}
+		}
+
+		&__logo {
+			@include sp() {
+				margin-right: 0;
+			}
+
+			small {
+				@include sp() {
+					display: none;
+				}
+			}
+		}
+
+		&__contact {
+			@include sp() {
+				display: none;
+			}
 		}
 
 		&__nav {
+			@include sp() {
+				display: none;
+			}
+
 			&__list {
 				display: flex;
 				justify-content: center;
@@ -375,27 +437,58 @@
 		&__inner {
 			@include border-radius(0 150px 0 0);
 			background: #116DC9;
+			@include sp() {
+				@include border-radius(0);
+			}
 		}
 
 		&__wrapper {
 			width: 1000px;
 			margin: auto;
 			padding: 80px 0 65px;
+			@include sp() {
+				width: auto;
+				padding: 8% 0;
+			}
 		}
 
 		&__logo {
 			margin-bottom: 60px;
 			padding-bottom: 25px;
 			border-bottom: 1px solid #FFF;
+			@include sp() {
+				display: block;
+				margin-bottom: 8%;
+				padding: 0 0 4% 5%;
+			}
+
+			a {
+				@include sp() {
+					margin-right: 0;
+				}
+			}
+
+			img {
+				@include sp() {
+					width: 75%;
+				}
+			}
 
 			small {
 				color: #FFF;
+				@include sp() {
+					margin-top: 3%;
+					font-size: 14px;
+				}
 			}
 		}
 
 		&__flex {
 			display: flex;
 			justify-content: space-between;
+			@include sp() {
+				display: block;
+			}
 		}
 
 		&__nav {
@@ -404,17 +497,29 @@
 				flex-wrap: wrap;
 				width: 700px;
 				margin-top: -40px;
+				@include sp() {
+					display: block;
+					width: auto;
+					margin: 0 5% 10%;
+				}
 			}
 
 			&__item {
 				min-width: 220px;
 				margin-top: 40px;
+				@include sp() {
+					min-width: auto;
+					margin: 0 0 6%;
+				}
 
 				a {
 					position: relative;
 					color: #FFF;
 					font-size: 16px;
 					text-decoration: underline;
+					@include sp() {
+						font-size: 14px;
+					}
 
 					&:before {
 						content: "";
@@ -428,6 +533,10 @@
 						border-style: solid;
 						border-width: 5px 0 5px 12.5px;
 						border-color: transparent transparent transparent #FFF;
+						@include sp() {
+							right: -20px;
+							border-width: 3px 0 3px 8px;
+						}
 					}
 				}
 			}
@@ -437,6 +546,9 @@
 			a {
 				background: #FFF;
 				color: #116DC9;
+				@include sp() {
+					margin: auto;
+				}
 
 				&:before{
 					background: #116DC9;
@@ -453,6 +565,9 @@
 			color: #FFF;
 			font-size: 14px;
 			text-align: center;
+			@include sp() {
+				font-size: 12px;
+			}
 		}
 	}
 }
