@@ -65,6 +65,51 @@ File Name: top.scss
 ----------------------------------------------------------------------*/
 @include common;
 
+.slick-prev,
+.slick-next {
+	@include sp() {
+		top: 40%;
+		bottom: unset;
+		width: 40px;
+		height: 40px;
+	}
+
+	&:after {
+		@include sp() {
+			width: 20px;
+			height: 13px;
+			@include background-size(contain);
+		}
+	}
+}
+
+.slick-prev {
+	@include sp() {
+		left: 1%;
+	}
+
+	&:after {
+		@include sp() {
+			left: 30%;
+			top: 35%;
+		}
+	}
+}
+
+.slick-next {
+	@include sp() {
+		left: unset;
+		right: 1%;
+	}
+
+	&:after {
+		@include sp() {
+			right: 30%;
+			top: 35%;
+		}
+	}
+}
+
 
 /*----------------------------------------------------------------------
 6.	#header
@@ -782,6 +827,10 @@ File Name: top.scss
 		.slick-prev {
 			left: -40px;
 			bottom: 180px;
+			@include sp() {
+				left: 1%;
+				bottom: unset;
+			}
 		}
 
 		.slick-next {
@@ -789,7 +838,8 @@ File Name: top.scss
 			right: -30px;
 			bottom: 180px;
 			@include sp() {
-				right: 0;
+				right: 1%;
+				bottom: unset;
 			}
 		}
 
@@ -803,7 +853,6 @@ File Name: top.scss
 	&__item {
 		@include box-shadow(0 0 10px rgba(#000, .2));
 		@include border-radius(10px 10px 0 0);
-		width: 379px !important;
 		overflow: hidden;
 		@include sp() {
 			width: 100% !important;

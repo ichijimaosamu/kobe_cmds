@@ -228,7 +228,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php
 if ($_SERVER["HTTP_HOST"] == 'localhost') {
@@ -238,7 +237,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 <!--/sp_menu-->
-<?php } ?>
 
 </body>
 </html>

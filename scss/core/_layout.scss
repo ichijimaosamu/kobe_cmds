@@ -316,6 +316,7 @@
 		}
 
 		&__upper {
+			@include border-radius(0);
 			display: flex;
 			justify-content: space-between;
 			padding: 20px 70px;
@@ -323,7 +324,7 @@
 			@include sp() {
 				display: block;
 				width: 48%;
-				margin: 3% 0 0 4%;
+				margin: 3% 0 0 3%;
 				padding: 0;
 				border-bottom: none;
 			}
@@ -393,6 +394,9 @@
 	.lower {
 		.header {
 			margin-bottom: 75px;
+			@include sp() {
+				margin-bottom: 10%;
+			}
 		}
 	}
 }
@@ -402,13 +406,27 @@
 		display: flex;
 		width: 1180px;
 		margin: 0 auto 50px;
+		@include sp() {
+			@include pie-clearfix;
+			display: block;
+			width: auto;
+			margin: 0 auto 5% 3%;
+		}
 
 		&__item {
 			position: relative;
 			font-size: 16px;
+			@include sp() {
+				float: left;
+				font-size: 12px;
+				line-height: 1.5;
+			}
 
 			&:not(:last-child) {
 				margin-right: 50px;
+				@include sp() {
+					margin-right: 25px;
+				}
 
 				&:after {
 					content: "＞";
@@ -417,6 +435,9 @@
 					top: 0;
 					bottom: 0;
 					margin: auto;
+					@include sp() {
+						right: -19px;
+					}
 				}
 			}
 
