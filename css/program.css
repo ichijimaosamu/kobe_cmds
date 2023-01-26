@@ -832,6 +832,113 @@ body > #container {
     padding-top: 20px;
   }
 }
+.program__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1180px;
+  margin: 50px auto 100px;
+}
+@media screen and (max-width: 768px) {
+  .program__list {
+    width: auto;
+    margin: 0 auto 20%;
+  }
+}
+.program__item {
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 373px;
+  margin: 30px 30px 0 0;
+  background: #FFF;
+}
+@media screen and (max-width: 768px) {
+  .program__item {
+    -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    width: auto !important;
+    margin: 8% 5% 0;
+  }
+}
+.program__item:nth-child(3n) {
+  margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+  .program__item:nth-child(3n) {
+    margin-right: 5%;
+  }
+}
+.program__item a {
+  display: block;
+  padding: 25px 25px 30px;
+  color: initial;
+}
+@media screen and (max-width: 768px) {
+  .program__item a {
+    padding: 4%;
+  }
+}
+.program__item__thumb {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .program__item__thumb {
+    margin-bottom: 5%;
+  }
+}
+.program__item__thumb img {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.program__item__term {
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .program__item__term {
+    margin-bottom: 3%;
+    font-size: 18px;
+  }
+}
+.program__item__term em {
+  color: #116DC9;
+  font-weight: 700;
+}
+.program__item__description {
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 2.125;
+}
+@media screen and (max-width: 768px) {
+  .program__item__description {
+    margin-bottom: 3%;
+    font-size: 14px;
+    line-height: 1.57143;
+  }
+}
+.program__item__more {
+  text-align: right;
+}
+.program__item__more__inner {
+  display: inline-block;
+  padding-bottom: 3px;
+  color: #116DC9;
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid #000;
+}
+@media screen and (max-width: 768px) {
+  .program__item__more__inner {
+    font-size: 14px;
+  }
+}
 .program__upper {
   width: 1180px;
   margin: 0 auto -265px;

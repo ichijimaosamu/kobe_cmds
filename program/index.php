@@ -21,7 +21,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 ?>
 <link rel="stylesheet" href="<?php echo $base_url . '/'; ?>css/program.css" />
 </head>
-<body id="program" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<body id="program" class="lower" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 
 <div id="container">
 <!--container-->
@@ -39,8 +39,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <ol class="topicpath">
 <li class="topicpath__item"><a href="<?php echo $base_url . '/'; ?>">トップ</a></li>
-<li class="topicpath__item"><a href="<?php echo $base_url . '/'; ?>program/">講座プログラム</a></li>
-<li class="topicpath__item"><a href="<?php echo $base_url . $_SERVER["REQUEST_URI"]; ?>">データサイエンス AI・基礎</a></li>
+<li class="topicpath__item"><a href="<?php echo $base_url . $_SERVER["REQUEST_URI"]; ?>">講座プログラム</a></li>
 </ol>
 
 <main role="main">
@@ -48,22 +47,51 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <article class="main">
 <!--main-->
 
-<h1 class="main__title"></h1>
+<h1 class="main__title"><span class="main__title__inner">講座プログラム</span></h1>
 
-<div class="main__visual">
-<h2 class="main__visual__title"></h2>
+<ul class="program__list">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/01/">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb1.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term"><em>データサイエンス・AI基礎</em></dt>
+<dd class="program__item__description">インターネット・情報技術の進展により、ビッグデータやＡＩの活用が可能になり社会に新しい価値が生まれ、日常にも大きな変化をもたらしています。</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb2.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
+<dl>
+<dt class="program__item__term">Pyton基礎演習</dt>
+<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
+<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
+</dl>
+</a></li>
+</ul>
 
-
-</div>
-
-<section class="leader">
-<div class="leader__inner">
-<h2 class="leader__title"></h2>
-
-
-
-</div>
-</section>
 
 <!--/main-->
 </article>
@@ -92,7 +120,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 
-<?php if(false) { ?>
 <!--sp_menu-->
 <?php
 if ($_SERVER["HTTP_HOST"] == 'localhost') {
@@ -102,7 +129,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 }
 ?>
 <!--/sp_menu-->
-<?php } ?>
 
 </body>
 </html>

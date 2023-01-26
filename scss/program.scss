@@ -114,6 +114,100 @@ File Name: program.scss
 		padding-top: 20px;
 	}
 
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 1180px;
+		margin: 50px auto 100px;
+		@include sp() {
+			width: auto;
+			margin: 0 auto 20%;
+		}
+	}
+
+	&__item {
+		@include box-shadow(5px 5px 10px rgba(#000, .3));
+		@include border-radius(10px);
+		width: 373px;
+		margin: 30px 30px 0 0;
+		background: #FFF;
+		@include sp() {
+			@include box-shadow(3px 3px 5px rgba(#000, .3));
+			width: auto !important;
+			margin: 8% 5% 0;
+		}
+
+		&:nth-child(3n) {
+			margin-right: 0;
+			@include sp() {
+				margin-right: 5%;
+			}
+		}
+
+		a {
+			display: block;
+			padding: 25px 25px 30px;
+			color: initial;
+			@include sp() {
+				padding: 4%;
+			}
+		}
+
+		&__thumb {
+			margin-bottom: 30px;
+			@include sp() {
+				margin-bottom: 5%;
+			}
+
+			img {
+				@include border-radius(10px);
+				width: 100%;
+			}
+		}
+
+		&__term {
+			margin-bottom: 18px;
+			font-size: 24px;
+			font-weight: 700;
+			@include sp() {
+				margin-bottom: 3%;
+				font-size: 18px;
+			}
+
+			em {
+				color: #116DC9;
+				font-weight: 700;
+			}
+		}
+
+		&__description {
+			margin-bottom: 18px;
+			font-size: 16px;
+			line-height: (34/16);
+			@include sp() {
+				margin-bottom: 3%;
+				font-size: 14px;
+				line-height: (22/14);
+			}
+		}
+
+		&__more {
+			text-align: right;
+
+			&__inner {
+				display: inline-block;
+				padding-bottom: 3px;
+				color: #116DC9;
+				font-size: 16px;
+				font-weight: 700;
+				border-bottom: 1px solid #000;
+				@include sp() {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
 	&__upper {
 		width: 1180px;
 		margin: 0 auto -265px;
