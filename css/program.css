@@ -940,6 +940,8 @@ body > #container {
   }
 }
 .program__upper {
+  position: relative;
+  z-index: 1;
   width: 1180px;
   margin: 0 auto -265px;
 }
@@ -1013,8 +1015,8 @@ body > #container {
 .program__pic {
   position: absolute;
   z-index: -1;
-  right: 0;
-  top: 160px;
+  right: -100px;
+  top: -80px;
 }
 @media screen and (max-width: 768px) {
   .program__pic {
@@ -1022,8 +1024,6 @@ body > #container {
   }
 }
 .program__lower {
-  position: relative;
-  z-index: -100;
   padding: 365px 0 150px;
   background: #E8ECEF;
 }
@@ -1148,6 +1148,10 @@ body > #container {
     font-size: 14px;
   }
 }
+.summary__item__description a {
+  color: #116DC9;
+  text-decoration: underline;
+}
 
 .schedule__list {
   width: 610px;
@@ -1230,6 +1234,9 @@ body > #container {
     height: 30px;
     margin-right: 15px;
   }
+}
+.schedule__item__description {
+  line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .schedule__item__description {

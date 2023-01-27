@@ -209,6 +209,8 @@ File Name: program.scss
 	}
 
 	&__upper {
+		position: relative;
+		z-index: 1;
 		width: 1180px;
 		margin: 0 auto -265px;
 		@include sp() {
@@ -274,16 +276,14 @@ File Name: program.scss
 	&__pic {
 		position: absolute;
 		z-index: -1;
-		right: 0;
-		top: 160px;
+		right: -100px;
+		top: -80px;
 		@include sp() {
 			position: unset;
 		}
 	}
 
 	&__lower {
-		position: relative;
-		z-index: -100;
 		padding: 365px 0 150px;
 		background: #E8ECEF;
 		@include sp() {
@@ -391,6 +391,11 @@ File Name: program.scss
 				width: auto;
 				font-size: 14px;
 			}
+
+			a {
+				color: #116DC9;
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -468,6 +473,7 @@ File Name: program.scss
 		}
 
 		&__description {
+			line-height: 1.5;
 			@include sp() {
 				width: 75%;
 			}

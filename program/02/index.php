@@ -40,7 +40,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <ol class="topicpath">
 <li class="topicpath__item"><a href="<?php echo $base_url . '/'; ?>">トップ</a></li>
 <li class="topicpath__item"><a href="<?php echo $base_url . '/'; ?>program/">講座プログラム</a></li>
-<li class="topicpath__item"><a href="<?php echo $base_url . $_SERVER["REQUEST_URI"]; ?>">データサイエンス AI・基礎</a></li>
+<li class="topicpath__item"><a href="<?php echo $base_url . $_SERVER["REQUEST_URI"]; ?>">Python基礎演習</a></li>
 </ol>
 
 <main role="main">
@@ -52,10 +52,10 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <section class="program">
 <div class="program__upper">
-<h2 class="program__title">データサイエンス AI・基礎</h2>
+<h2 class="program__title">Python基礎演習</h2>
 
 <dl class="program__box">
-<dt class="program__box__term">Society 5.0がもたらす社会の変化、データ・AI利活用の最新動向や活用、実用事例に触れ、AI倫理、プライバシー保護などを理解した上で、適切にデータ解析するスキルを習得します。また、エクセルを使った、実践的なデータ解析演習も学べます。</dt>
+<dt class="program__box__term">データサイエンス・AI分野で最もよく使われるPython言語を使って、自分の手で基礎的なデータ分析を行えることを目標とし、Google Colabを使ったオンデマンド講義とeラーニング型演習で、プログラミング基礎を短期間で効果的に習得できます。</dt>
 <dd class="program__box__description">この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。</dd>
 </dl>
 
@@ -130,68 +130,71 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第1回</dt>
-<dd class="schedule__item__description">社会で起きている変化<br>
-・データサイエンス・AIが注目される背景<br>
-・Scoiety 5.0とデータサイエンス・AI</dd>
+<dd class="schedule__item__description">Pythonイントロダクション<br>
+・プログラム、プログラミングとは<br>
+・Hello Pythonプログラミング<br>
+・キーボードから入力を受け付ける</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第2回</dt>
-<dd class="schedule__item__description">社会におけるデータサイエンス・AI利活用<br>
-・データサイエンス・AIの概要<br>
-・データ解析のフローと基本用語<br>
-・データ解析の種類：多変量解析、機械学習</dd>
+<dd class="schedule__item__description">データ型、演算子、制御構造<br>
+・Pythonの代表的なデータ型<br>
+・Pythonの代表的な演算子<br>
+・逐次実行、条件分岐、繰り返し</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第3回</dt>
-<dd class="schedule__item__description">データAI利活用の現場・最新動向<br>
-・データ利活用事例（インタビュー）<br>
-・各業種におけるAI利活用</dd>
+<dd class="schedule__item__description">リスト、配列、関数<br>
+・リストの基本操作とfor文によるリスト操作<br>
+・配列を作成・型と要素の操作<br>
+・関数とは、配列のメソッドを利用する</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第4回</dt>
-<dd class="schedule__item__description">AI利活用における留意事項<br>
-・データ利活用の現状とリスク<br>
-・プライバシー保護技術と匿名・仮名加工<br>
-・AI・データ倫理と人間中心のAI社会原則</dd>
+<dd class="schedule__item__description">Pandas入門<br>
+・Pandasデータフレーム<br>
+・表の基本的な操作を学習しよう<br>
+・データを分析してみよう<br>
+・表を生成・変形する</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第5回</dt>
-<dd class="schedule__item__description">データリテラシー・データを読む<br>
-・データ分布・代表値・偏差値・基本統計量<br>
-・不偏分散と標本分散、相関係数<br>
-・相関と因果</dd>
+<dd class="schedule__item__description">ファイル入出力、プロットと可視化<br>
+・ファイル入出力、プロットと可視化<br>
+・プロット：データをグラフに描く<br>
+・図とサブプロット</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第6回</dt>
-<dd class="schedule__item__description">データリテラシー・データを説明する<br>
-・データの可視化手法：各種グラフ、散布図<br>
-・主成分分析と高次元データの可視化<br>
-・時系列データの可視化・情報抽出</dd>
+<dd class="schedule__item__description">生データからデータセットへ<br>
+・データのクリーニング<br>
+・データフレームの結合、変形<br>
+・グループ化によるデータの集計<br>
+・時系列データの処理</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第7回</dt>
-<dd class="schedule__item__description">データリテラシー・データを扱う<br>
-・単回帰分析・重回帰分析<br>
-・深層学習入門と過学習・次元の呪い<br>
-・基本統計量を使ったデータ分析演習</dd>
+<dd class="schedule__item__description">Hello データサイエンス<br>
+・データサイエンスの手法（相関分析、主成分分析、回帰分析）<br>
+・データを眺める手法（可視化手法）</dd>
 </dl>
 </li>
 <li class="schedule__item">
 <dl>
 <dt class="schedule__item__term">第8回</dt>
-<dd class="schedule__item__description">確認テスト（オンライン）</dd>
+<dd class="schedule__item__description">演習問題 総合解説</dd>
 </dl>
 </li>
 </ol>

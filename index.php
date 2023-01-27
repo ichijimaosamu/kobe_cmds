@@ -148,7 +148,7 @@ AI 導入「はじめの一歩」がわかります。<br>
 <dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb2.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term">Pyton基礎演習</dt>
@@ -156,7 +156,7 @@ AI 導入「はじめの一歩」がわかります。<br>
 <dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term">Pyton基礎演習</dt>
@@ -164,7 +164,7 @@ AI 導入「はじめの一歩」がわかります。<br>
 <dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term">Pyton基礎演習</dt>
@@ -172,7 +172,7 @@ AI 導入「はじめの一歩」がわかります。<br>
 <dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
 <p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
 <dl>
 <dt class="program__item__term">Pyton基礎演習</dt>
