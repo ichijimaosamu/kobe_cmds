@@ -116,7 +116,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <dl>
 <dt class="summary__item__term">申込方法</dt>
 <dd class="summary__item__description">以下のURLで申込フォームにアクセスし、お申込みください。<br>
-<a href="http://www.cmds.kobe-u.ac.jp/events/2022/2022_dx_basic" target="_blank" rel="noopener">http://www.cmds.kobe-u.ac.jp/events/2022/2022_dx_basic</a></dd>
+<a href="https://forms.gle/RHkH1bqM5Pzt8Btn6" target="_blank" rel="noopener">https://forms.gle/RHkH1bqM5Pzt8Btn6</a></dd>
 </dl>
 </li>
 </ul>
@@ -226,7 +226,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <p class="contact__text">この文章はダミーです繰り返します。この文章はダミーです繰り返します。<br>
 紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。</p>
-<p class="contact__btn link-btn"><a href="<?php echo $base_url . '/'; ?>contact/">お申し込みはこちらから</a></p>
+<p class="contact__btn link-btn"><a href="https://forms.gle/RHkH1bqM5Pzt8Btn6" target="_blank" rel="noopener">お申し込みはこちらから</a></p>
 </section>
 
 

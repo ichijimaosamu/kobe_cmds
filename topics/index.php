@@ -50,39 +50,25 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <h1 class="main__title"><span class="main__title__inner">DXトピックス</span></h1>
 
 <ul class="topics__list">
-<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>topics/02/">
 <p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb1.jpg" alt=""></p>
 <dl>
 <dt class="topics__item__term"><span class="topics__item__category">神戸データサイエンス操練所</span>2022.00.00</dt>
-<dd class="topics__item__description"><em>タイトルが入りますタイトルが入ります</em></dd>
+<dd class="topics__item__description"><em>神戸データサイエンス操練所について</em></dd>
 </dl>
 </a></li>
-<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>topics/03/">
 <p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb2.jpg" alt=""></p>
 <dl>
 <dt class="topics__item__term"><span class="topics__item__category">高大連携</span>2022.00.00</dt>
-<dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
+<dd class="topics__item__description">高大連携について<br><br></dd>
 </dl>
 </a></li>
-<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
+<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>topics/01/">
 <p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb3.jpg" alt=""></p>
 <dl>
 <dt class="topics__item__term"><span class="topics__item__category">DXプロジェクト</span>2022.00.00</dt>
-<dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
-</dl>
-</a></li>
-<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb2.jpg" alt=""></p>
-<dl>
-<dt class="topics__item__term"><span class="topics__item__category">高大連携</span>2022.00.00</dt>
-<dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
-</dl>
-</a></li>
-<li class="topics__item"><a href="<?php echo $base_url . '/'; ?>">
-<p class="topics__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/topics_item_thumb3.jpg" alt=""></p>
-<dl>
-<dt class="topics__item__term"><span class="topics__item__category">DXプロジェクト</span>2022.00.00</dt>
-<dd class="topics__item__description">タイトルが入りますタイトルが入ります</dd>
+<dd class="topics__item__description">IoTとエージェントを活用した<br>高齢者の見守り実証実験</dd>
 </dl>
 </a></li>
 </ul>
