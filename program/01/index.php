@@ -205,13 +205,47 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <h2 class="lecturer__title">担当講師について</h2>
 
 <div class="lecturer__inner">
-<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/lecturer_pic.png" alt="お名前お名前"></p>
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/ozawa_seiichi.jpg" alt="小澤 誠一"></p>
 
 <dl class="lecturer__info">
-<dt class="lecturer__info__name">お名前お名前</dt>
-<dd class="lecturer__info__position">神戸大学工学部 研究科<br>
-専攻専攻</dd>
-<dd class="lecturer__info__text">紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。</dd>
+<dt class="lecturer__info__name">小澤 誠一<small>教授</small><span class="en">Ozawa Seiichi</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+機械学習/ビッグデータ解析/セキュリティ<br>
+■研究業務内容：<br>
+機械学習をビッグデータ解析に応用して、サイバーセキュリティ、金融文書解析、スマート農業などの実問題の解決に取り組んでいます。また、複数の組織が互いにデータを直接共有しなくても、セキュアにデータ解析可能な協調学習手法の開発にも取り組んでいます。</dd>
+</dl>
+</div>
+
+<div class="lecturer__inner">
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/shutoh_nobumichi.jpg" alt="首藤 信通"></p>
+
+<dl class="lecturer__info">
+<dt class="lecturer__info__name">首藤 信通<small>教授</small><span class="en">Shutoh Nobumichi</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+数理統計学/多変量解析/統計的漸近理論<br>
+■研究業務内容：<br>
+専門分野は数理統計学であり、主として多変量解析の理論研究に従事している。具体的には、欠測データや高次元データ等の扱いにくいデータに対して、数字を応用することにより、理論的に新規の統計解析法を導出する研究や、既存の統計解析法を改良する研究を行っている。</dd>
+</dl>
+</div>
+
+<div class="lecturer__inner">
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/komyo_arata.jpg" alt="光明 新"></p>
+
+<dl class="lecturer__info">
+<dt class="lecturer__info__name">光明 新<small>講師</small><span class="en">Komyo Arata</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+数学/代数幾何学/可積分系<br>
+■研究業務内容：<br>
+代数幾何学の可積分系への応用。特にパンルヴェ方程式の背後にある幾何学的構造の解明を目標に、接続のモジュライ空間や指標多様体を研究している。データサイエンス教育（リテラシーレベル・応用基礎レベル・PBL演習）、リカレント教育に取り組んでいる。</dd>
+</dl>
+</div>
+
+<div class="lecturer__inner">
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/dummy.jpg" alt="伊藤 真理"></p>
+
+<dl class="lecturer__info">
+<dt class="lecturer__info__name">伊藤 真理<small>特命准教授</small><span class="en">Ito Mari</span></dt>
+<dd class="lecturer__info__text" style="display: none;">&nbsp;</dd>
 </dl>
 </div>
 </section>

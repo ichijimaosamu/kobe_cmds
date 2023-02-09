@@ -208,13 +208,50 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <h2 class="lecturer__title">担当講師について</h2>
 
 <div class="lecturer__inner">
-<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/lecturer_pic.png" alt="お名前お名前"></p>
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/02/img/nakamura_masahide.jpg" alt="中村 匡秀"></p>
 
 <dl class="lecturer__info">
-<dt class="lecturer__info__name">お名前お名前</dt>
-<dd class="lecturer__info__position">神戸大学工学部 研究科<br>
-専攻専攻</dd>
-<dd class="lecturer__info__text">紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。紹介文章が入ります。この文章はダミーです繰り返します。</dd>
+<dt class="lecturer__info__name">中村 匡秀<small>教授</small><span class="en">Nakamura Masahide</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+情報通信/ウェブ情報学、サービス情報学、情報ネットワーク、計算機システム、ソフトウェア<br>
+■研究業務内容：<br>
+サービスコンピューティングとソフトウェア工学を駆使した、スマートシステム、サイバーフィジカルシステムの設計・実装に関する研究。ヴァーチャルエージェント、オントロジー、機械学習の応用にも興味を持つ。</dd>
+</dl>
+</div>
+
+<div class="lecturer__inner">
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/02/img/yamada_akira.jpg" alt="山田 明"></p>
+
+<dl class="lecturer__info">
+<dt class="lecturer__info__name">山田 明<small>教授</small><span class="en">Yamada Akira</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+サイバーセキュリティ、ネットワーク、AI応用、ヒューマンファクタセキュリティ<br>
+■研究業務内容：<br>
+サイバーセキュリティにおける課題に対してAI・機械学習の応用による研究を行っている。ISPにおけるDDoS攻撃検知・軽減システムの研究開発と実用化やWeb媒介型攻撃対策の実用化に向けた研究開発を実施。システムだけでなくヒトを考慮したヒューマンファクタセキュリティ研究分野の確立を目指している。</dd>
+</dl>
+</div>
+
+<div class="lecturer__inner">
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/02/img/tahara_nobuhiko.jpg" alt="田原 伸彦"></p>
+
+<dl class="lecturer__info">
+<dt class="lecturer__info__name">田原 伸彦<small>特命助教</small><span class="en">Tahara Nobuhiko</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+数学/基礎解析学<br>
+■研究業務内容：<br>
+主に高階のパンルヴェ型方程式系の相空間について研究を行っている。また、統計的機械学習・深層学習の数理にも興味を持っている。</dd>
+</dl>
+</div>
+
+<div class="lecturer__inner">
+<p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/02/img/chen_sinan.jpg" alt="陳 思楠"></p>
+
+<dl class="lecturer__info">
+<dt class="lecturer__info__name">陳 思楠<small>特命助教</small><span class="en">Chen Sinan</span></dt>
+<dd class="lecturer__info__text">■研究分野：<br>
+情報通信/ウェブ情報学、サービス情報学/情報通信/ソフトウェア<br>
+■研究業務内容：<br>
+実世界の課題を改善する応用情報学の研究を行っている。Computer VisionとVirtual Agentを統合した在宅介護支援システムの開発や、Software資産のUpcyclingによる高機能・新設計の生み出しを努めている。また、文理・異分野研究の融合に向けた先端教育手法も模索している。</dd>
 </dl>
 </div>
 </section>

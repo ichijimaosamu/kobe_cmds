@@ -516,12 +516,20 @@ File Name: program.scss
 			margin: 0 4%;
 			padding: 5% 4%;
 		}
+
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__pic {
 		@include sp() {
 			width: 50%;
 			margin: 0 auto 4%;
+		}
+
+		img {
+			@include border-radius(50%);
 		}
 	}
 
@@ -532,6 +540,8 @@ File Name: program.scss
 		}
 
 		&__name {
+			display: flex;
+			align-items: center;
 			margin-bottom: 20px;
 			font-size: 30px;
 			font-weight: 500;
@@ -539,6 +549,23 @@ File Name: program.scss
 				margin-bottom: 2%;
 				font-size: 24px;
 				text-align: center;
+			}
+
+			small {
+				margin-left: 15px;
+				font-size: 24px;
+				@include sp() {
+					font-size: 16px;
+				}
+			}
+
+			.en {
+				margin-left: 15px;
+				font-size: 18px;
+				font-weight: 500;
+				@include sp() {
+					font-size: 12px;
+				}
 			}
 		}
 
@@ -556,10 +583,10 @@ File Name: program.scss
 		}
 
 		&__text {
-			padding: 20px 30px;
+			padding: 15px 20px;
 			background: #E1EFFF;
-			font-size: 16px;
-			line-height: (35/16);
+			font-size: 14px;
+			line-height: (26/14);
 			@include sp() {
 				padding: 4% 5%;
 				font-size: 14px;
