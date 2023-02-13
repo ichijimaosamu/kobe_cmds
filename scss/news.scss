@@ -230,6 +230,9 @@ File Name: news.scss
 		>dl {
 			display: flex;
 			align-items: center;
+			@include sp() {
+				display: block;
+			}
 		}
 
 		&__date {
@@ -240,11 +243,14 @@ File Name: news.scss
 			font-weight: 500;
 			border-right: 1px solid #1A1A1A;
 			@include sp() {
+				margin: 0 0 2%;
+				padding: 0;
 				font-size: 12px;
+				border: none;
 			}
 		}
 
-		&__text {
+		&__description {
 			display: flex;
 			align-items: center;
 			color: #1A1A1A;
@@ -256,8 +262,22 @@ File Name: news.scss
 			}
 
 			a {
+				display: block;
+				width: 780px;
 				color: #116DC9;
+				line-height: 1.5;
 				text-decoration: underline;
+				@include sp() {
+					width: auto;
+				}
+			}
+		}
+
+		&__text {
+			width: 780px;
+			line-height: 1.5;
+			@include sp() {
+				width: auto;
 			}
 		}
 

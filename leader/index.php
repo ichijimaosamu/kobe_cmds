@@ -51,7 +51,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <section class="program">
 <div class="program__upper">
-<h2 class="program__title">準備中</h2>
+<h2 class="program__title">2023年4月開講予定</h2>
 </div>
 </section>
 

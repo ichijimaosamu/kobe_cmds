@@ -60,34 +60,23 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <div class="news__box">
 <ul class="news__list">
-<li class="news__item">
+<li class="news__item -events">
 <dl>
-<dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">すべて</span><a href="<?php echo $base_url . '/'; ?>">タイトルが入ります。タイトルが入ります。</a></dd>
-</dl>
-</li>
-<li class="news__item -notices">
-<dl>
-<dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">NOTICES</span>タイトルが入ります。タイトルが入ります。</dd>
+<dt class="news__item__date">2023.02.08</dt>
+<dd class="news__item__description"><span class="news__item__category">EVENTS</span><a href="https://duex.jp/news/detail/143" target="_blank" rel="noopener">［関西地区コンソーシアム］<br>
+数理人材育成協会（HRAM）では、2023年2月20日（月）18:30～Zoomウェビナーにて、2023年度のガイダンスを行います。HRAMでは、学生・社会人を対象に、数理データサイエンスに関連したe-Learning教材の提供、公開講座などを実施しています。ガイダンス視聴をご希望の方は、お申込みください（申込締切2/15）。</a></dd>
 </dl>
 </li>
 <li class="news__item -events">
 <dl>
-<dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">EVENTS</span>タイトルが入ります。タイトルが入ります。</dd>
+<dt class="news__item__date">2023.01.31</dt>
+<dd class="news__item__description"><span class="news__item__category">EVENTS</span><a href="http://www.cmds.kobe-u.ac.jp/events/2022/2022_fd_symposium/index.html" target="_blank" rel="noopener">2023年2月21日(火)13:00から、Zoomによる「数理・データサイエンス・AI教育 FDシンポジウム」を「大学に期待される社会人DXリカレント教育」をテーマに開催いたします。多くの皆様のご参加を心よりお待ち申し上げております。</a></dd>
 </dl>
 </li>
 <li class="news__item -notices">
 <dl>
-<dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">NOTICES</span>タイトルが入ります。タイトルが入ります。</dd>
-</dl>
-</li>
-<li class="news__item -events">
-<dl>
-<dt class="news__item__date">2022.00.00</dt>
-<dd class="news__item__text"><span class="news__item__category">EVENTS</span>タイトルが入ります。タイトルが入ります。</dd>
+<dt class="news__item__date">2023.01.12</dt>
+<dd class="news__item__description"><span class="news__item__category">NOTICES</span><span class="news__item__text">eラーニングプログラム「DX 基礎講座」が1月10日から専用の学習管理システム (LMS) 上で受講可能になりました。申し込みをされた方には LMS へログインするための通知をメールにて送付しておりますのでご確認ください。まだ通知を受け取っていないと思われる方は、こちらまでお問い合わせください。</span></dd>
 </dl>
 </li>
 </ul>
