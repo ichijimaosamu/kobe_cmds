@@ -187,7 +187,8 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <dl>
 <dt class="schedule__item__term">第7回</dt>
 <dd class="schedule__item__description">Hello データサイエンス<br>
-・データサイエンスの手法（相関分析、主成分分析、回帰分析）<br>
+・データサイエンスの手法<br>
+（相関分析、主成分分析、回帰分析）<br>
 ・データを眺める手法（可視化手法）</dd>
 </dl>
 </li>
@@ -219,6 +220,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 </dl>
 </div>
 
+<?php if(false) { ?>
 <div class="lecturer__inner">
 <p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/02/img/yamada_akira.jpg" alt="山田 明"></p>
 
@@ -230,6 +232,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 サイバーセキュリティにおける課題に対してAI・機械学習の応用による研究を行っている。ISPにおけるDDoS攻撃検知・軽減システムの研究開発と実用化やWeb媒介型攻撃対策の実用化に向けた研究開発を実施。システムだけでなくヒトを考慮したヒューマンファクタセキュリティ研究分野の確立を目指している。</dd>
 </dl>
 </div>
+<?php } ?>
 
 <div class="lecturer__inner">
 <p class="lecturer__pic"><img src="<?php echo $base_url . '/'; ?>program/02/img/tahara_nobuhiko.jpg" alt="田原 伸彦"></p>

@@ -66,30 +66,6 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
 </dl>
 </a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
-<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
-<dl>
-<dt class="program__item__term">Python基礎演習</dt>
-<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
-<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
-</dl>
-</a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
-<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
-<dl>
-<dt class="program__item__term">Python基礎演習</dt>
-<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
-<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
-</dl>
-</a></li>
-<li class="program__item"><a href="<?php echo $base_url . '/'; ?>program/02/">
-<p class="program__item__thumb"><img src="<?php echo $base_url . '/'; ?>img/program_item_thumb3.jpg" alt=""></p>
-<dl>
-<dt class="program__item__term">Python基礎演習</dt>
-<dd class="program__item__description">データサイエンスの効果的な実践には，コンピュータ・ソフトウェアの活用が必須です。本講義では，データサイエンスのためのプログラミング言語とし</dd>
-<dd class="program__item__more"><span class="program__item__more__inner">VIEW MORE</span></dd>
-</dl>
-</a></li>
 </ul>
 
 

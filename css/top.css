@@ -1335,9 +1335,6 @@ body > #container {
 .program__more a:after {
   border-color: #FFF;
 }
-.program__list {
-  margin-left: 100px;
-}
 @media screen and (max-width: 768px) {
   .program__list {
     margin-left: 0;
