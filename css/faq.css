@@ -471,7 +471,11 @@ body > #container {
   align-items: center;
 }
 .logo a {
-  display: block;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.logo a img {
   margin-right: 20px;
 }
 .logo small {

@@ -2,8 +2,8 @@
 <div class="footer__inner">
 <div class="footer__wrapper">
 
-<p class="footer__logo logo"><a href=""><img src="<?php echo $base_url . '/'; ?>img/footer_logo.png" alt="CMDS 神戸大学"></a><small>Society5.0 と地方創生を加速させる<br>
-次世代DXリーダ育成プログラム事業</small></p>
+<p class="footer__logo logo"><a href="<?php echo $base_url . '/'; ?>"><img src="<?php echo $base_url . '/'; ?>img/footer_logo.png" alt="CMDS"></a><a href="http://www.cmds.kobe-u.ac.jp/" target="_blank" rel="noopener"><img src="<?php echo $base_url . '/'; ?>img/footer_logo2.png" alt="神戸大学"><small>Society5.0 と地方創生を加速させる<br>
+次世代DXリーダ育成プログラム事業</small></a></p>
 
 <div class="footer__flex">
 <nav class="footer__nav">
