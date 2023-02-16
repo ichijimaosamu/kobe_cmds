@@ -985,7 +985,6 @@ body > #container {
   }
 }
 .program__box__term {
-  margin-bottom: 40px;
   padding-left: 25px;
   color: #116DC9;
   font-size: 20px;
@@ -995,7 +994,6 @@ body > #container {
 }
 @media screen and (max-width: 768px) {
   .program__box__term {
-    margin-bottom: 4%;
     padding-left: 10px;
     font-size: 14px;
     border-width: 3px;

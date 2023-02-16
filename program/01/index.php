@@ -56,7 +56,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <dl class="program__box">
 <dt class="program__box__term">Society 5.0がもたらす社会の変化、データ・AI利活用の最新動向や活用、実用事例に触れ、AI倫理、プライバシー保護などを理解した上で、適切にデータ解析するスキルを習得します。また、エクセルを使った、実践的なデータ解析演習も学べます。</dt>
-<dd class="program__box__description">この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。</dd>
+<dd class="program__box__description"></dd>
 </dl>
 
 <p class="program__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/program_pic.jpg" alt=""></p>

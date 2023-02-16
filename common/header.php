@@ -1,7 +1,7 @@
 <?php $URI = $_SERVER["REQUEST_URI"]; ?>
 <header class="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 <div class="header__upper">
-<h1 class="header__logo logo"><a href="<?php echo $base_url . '/'; ?>"><img src="<?php echo $base_url . '/'; ?>img/header_logo.png" alt="CMDS"></a><a href="http://www.cmds.kobe-u.ac.jp/" target="_blank" rel="noopener"><img src="<?php echo $base_url . '/'; ?>img/header_logo2.png" alt="神戸大学"><small>Society5.0 と地方創生を加速させる<br>
+<h1 class="header__logo logo"><a href="http://www.cmds.kobe-u.ac.jp/"><img src="<?php echo $base_url . '/'; ?>img/header_logo.png" alt="CMDS"></a><a href="<?php echo $base_url . '/'; ?>" target="_blank" rel="noopener"><img src="<?php echo $base_url . '/'; ?>img/header_logo2.png" alt="神戸大学"><small>Society5.0 と地方創生を加速させる<br>
 次世代DXリーダ育成プログラム事業</small></a></h1>
 
 <p class="header__contact link-btn"><a href="<?php echo $base_url . '/'; ?>contact/">お問い合わせ</a></p>

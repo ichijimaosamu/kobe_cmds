@@ -56,7 +56,7 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 
 <dl class="program__box">
 <dt class="program__box__term">データサイエンス・AI分野で最もよく使われるPython言語を使って、自分の手で基礎的なデータ分析を行えることを目標とし、Google Colabを使ったオンデマンド講義とeラーニング型演習で、プログラミング基礎を短期間で効果的に習得できます。</dt>
-<dd class="program__box__description">この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。この文章はダミーです。繰り返します。</dd>
+<dd class="program__box__description"></dd>
 </dl>
 
 <p class="program__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/program_pic.jpg" alt=""></p>
