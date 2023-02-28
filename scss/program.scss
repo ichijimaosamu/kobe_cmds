@@ -118,7 +118,7 @@ File Name: program.scss
 		display: flex;
 		flex-wrap: wrap;
 		width: 1180px;
-		margin: 50px auto 100px;
+		margin: 30px auto 100px;
 		@include sp() {
 			width: auto;
 			margin: 0 auto 20%;
@@ -284,7 +284,7 @@ File Name: program.scss
 	}
 
 	&__lower {
-		padding: 365px 0 150px;
+		padding: 450px 0 150px;
 		background: #E8ECEF;
 		@include sp() {
 			position: unset;
@@ -333,18 +333,100 @@ File Name: program.scss
 	}
 }
 
-.summary {
-	margin-bottom: 130px;
+.tab {
+	width: 1180px;
+	margin: 50px auto 180px;
 	@include sp() {
-		margin-bottom: 10%;
+		width: auto;
+		margin: 5% auto 20%;
+	}
+
+	&__list {
+		display: flex;
+		margin-bottom: 70px;
+	}
+
+	&__item {
+		@include transition(all $mouseover linear);
+		@include box-shadow(3px 3px 5px rgba(#000, .2));
+		@include border-radius(10px);
+		padding: 15px 35px;
+		background: #FFF;
+		color: #116DC9;
+		font-size: 20px;
+		font-weight: bold;
+		border: 2px solid #116DC9;
+		cursor: pointer;
+
+		&:hover,
+		&.-is-active {
+			background: #116DC9;
+			color: #FFF;
+		}
+
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+	}
+
+	&__content {
+		&__title {
+			margin-bottom: 30px;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		&__lead {
+			font-size: 16px;
+			line-height: 2;
+		}
+	}
+}
+
+.summary {
+	margin: 0 0 130px;
+	@include sp() {
+		margin: 0 0 10%;
+	}
+
+	&__title {
+		position: relative;
+		margin-bottom: 70px;
+		font-size: 50px;
+		font-weight: bold;
+		text-align: center;
+		@include sp() {
+			margin-bottom: 30px;
+			font-size: 28px;
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -30px;
+			width: 72px;
+			height: 2px;
+			margin: auto;
+			background: #000;
+			@include sp() {
+				bottom: -12px;
+				width: 36px;
+				height: 1px;
+			}
+		}
 	}
 
 	&__inner {
 		@include border-radius(15px);
-		padding: 40px 60px;
+		width: 1180px;
+		margin: auto;
+		padding: 40px 0;
 		background: #FFF;
 		@include sp() {
 			@include border-radius(0);
+			width: auto;
 			padding: 3% 4%;
 		}
 	}
@@ -376,7 +458,7 @@ File Name: program.scss
 		}
 
 		&__term {
-			width: 28%;
+			width: 18%;
 			color: #116DC9;
 			font-weight: bold;
 			@include sp() {

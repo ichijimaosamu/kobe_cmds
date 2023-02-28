@@ -59,70 +59,10 @@ if ($_SERVER["HTTP_HOST"] == 'localhost') {
 <dd class="program__box__description"></dd>
 </dl>
 
-<p class="program__pic"><img src="<?php echo $base_url . '/'; ?>program/01/img/program_pic.jpg" alt=""></p>
+<p class="program__pic" style="top: -60px;"><img src="<?php echo $base_url . '/'; ?>program/02/img/program_pic.jpg" alt=""></p>
 </div>
 
 <div class="program__lower">
-<section class="summary box">
-<h3 class="box__title">概要</h3>
-
-<div class="summary__inner">
-<ul class="summary__list">
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">募集期間</dt>
-<dd class="summary__item__description">2022年11月8日(火) &ndash; 2022年12月16日(金)</dd>
-</dl>
-</li>
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">開講期間</dt>
-<dd class="summary__item__description">2023年1月10日(火) &ndash; 2023年2月28日(火)</dd>
-</dl>
-</li>
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">受講形式</dt>
-<dd class="summary__item__description">eラーニングによる自習形式<br>
-+ オンライン・オフィスアワー<br>
-※毎週水曜17時-19時にZOOMで質問に答えます。</dd>
-</dl>
-</li>
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">対象者</dt>
-<dd class="summary__item__description">主に企業や自治体、教育機関などの就業者を対象とし、<br>
-技術系部署に限らず、経営層、事務系各部署でデータサイエンス・AIを使って<br>
-組織内のDX推進を担う（担うことを目指す）人材を広く対象とします。</dd>
-</dl>
-</li>
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">定員</dt>
-<dd class="summary__item__description">500名</dd>
-</dl>
-</li>
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">受講料</dt>
-<dd class="summary__item__description">１科目コース（15時間）10,000円※<br>
-２科目コース（30時間）20,000円※<br>
-※教育機関の教職員には優待枠がありますので、<br>
-　お問い合わせください（条件設定あり）<br>
-※団体申請をご希望の場合はお問い合わせください</dd>
-</dl>
-</li>
-<li class="summary__item">
-<dl>
-<dt class="summary__item__term">申込方法</dt>
-<dd class="summary__item__description">以下のURLで申込フォームにアクセスし、お申込みください。<br>
-<a href="https://forms.gle/RHkH1bqM5Pzt8Btn6" target="_blank" rel="noopener">https://forms.gle/RHkH1bqM5Pzt8Btn6</a></dd>
-</dl>
-</li>
-</ul>
-</div>
-</section>
-
 <section class="schedule box">
 <h3 class="box__title">スケジュール</h3>
 
